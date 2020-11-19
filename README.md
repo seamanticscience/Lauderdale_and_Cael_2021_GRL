@@ -25,7 +25,7 @@ Any questions or comments, please get in contact!
 
 JML To Do:
 - [X] file description
-- [ ] updated list of code for preformed tracers
+- [X] updated list of code for preformed tracers
 - [ ] add MITgcm experiment input files
 - [ ] add MITgcm ouput last model decadal average for ptracers, dic, and diagnostics
 - [ ] update Jupyter notebook with relative paths to MWE model output uploaded here
