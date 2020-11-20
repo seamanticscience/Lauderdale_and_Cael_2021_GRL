@@ -1,0 +1,25 @@
+# DIC parameters 
+ &ABIOTIC_PARMS
+ &
+
+ &BIOTIC_PARMS
+ alphaUniform_yr = 4.e-3,
+ KScav_poc_yr = 28.44,
+ ligand_tot = 1.e-6,
+ scav_exp   = 0.58, 
+ scav_ratio = 0.2,
+# Use the ballast profile
+ selectExportRemin=3,
+ KRemin(1:4)=1.48700828671654994295,
+             2.17108737954241970414,
+             0.04158539239092089862,
+             0.0,
+&
+
+ &DIC_FORCING
+  DIC_iceFile='fice.bin',
+  DIC_windFile='tren_speed.bin',
+  DIC_silicaFile='sillev1.bin',
+  DIC_ironFile='mah_somtimind_molfem2s.bin',
+  DIC_int1=3,
+ &

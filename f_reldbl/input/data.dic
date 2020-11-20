@@ -1,0 +1,25 @@
+# DIC parameters 
+ &ABIOTIC_PARMS
+ &
+
+ &BIOTIC_PARMS
+ alphaUniform_yr = 4.e-3,
+ KScav_poc_yr = 28.44,
+ ligand_tot = 1.e-6,
+ scav_exp   = 0.58, 
+ scav_ratio = 0.2,
+# Use the double exponential profile
+ selectExportRemin=5,
+ KRemin(1:4)=1.32649633054510007746,
+             2.48666025214515995501,
+             0.08668464742408610313,
+             50.42280308985139214428,
+&
+
+ &DIC_FORCING
+  DIC_iceFile='fice.bin',
+  DIC_windFile='tren_speed.bin',
+  DIC_silicaFile='sillev1.bin',
+  DIC_ironFile='mah_somtimind_molfem2s.bin',
+  DIC_int1=3,
+ &

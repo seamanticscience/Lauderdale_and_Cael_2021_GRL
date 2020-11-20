@@ -1,0 +1,10 @@
+ simulation = { 'No flux experiment' };
+ nDims = [   3 ];
+ dimList = [
+     1,    1,    1,
+     1,    1,    1,
+     2,    1,    2
+ ];
+ dataprec = [ 'float64' ];
+ nrecords = [     1 ];
+ timeStepNumber = [   46800000 ];

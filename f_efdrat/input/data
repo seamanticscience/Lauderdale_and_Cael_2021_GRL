@@ -1,0 +1,116 @@
+# ====================
+# | Model parameters |
+# ====================
+#
+# Continuous equation parameters
+ &PARM01
+# Reference profiles averages from Levitus 
+ tRef= 14.3 , 12.2 , 10.0 , 8.1  , 6.4 ,
+       4.9  , 3.6  , 2.8  , 2.2  , 1.7 ,
+       1.4  , 1.3  , 1.1  , 0.9  , 0.8 ,
+ sRef= 34.64, 34.81, 34.87, 34.80, 34.71,
+       34.64, 34.64, 34.69, 34.72, 34.75,
+       34.76, 34.75, 34.73, 34.73, 34.72,
+ viscA4=0.,
+ viscAh=5.E5,
+ diffKhT=0.E3,
+ diffKhS=0.E3,
+ viscAz=1.E-3,
+ diffKzT=5.E-5,
+ diffKzS=5.E-5,
+# diffKrBL79surf=3.E-5,
+# diffKrBL79deep=13.E-5,
+# diffKrBL79Ho  =-2000.,
+# diffKrBL79scl =150.,
+ rotationPeriod=86400.,
+ beta=1.E-11,
+ f0=1.e-4,
+ tAlpha=2.E-4,
+ sBeta =7.4E-4,
+ gravity=9.81,
+ gBaro=9.81,
+ rhonil=1035.,
+ rigidLid=.TRUE.,
+ implicitFreeSurface=.FALSE.,
+ useRealFreshWaterFlux=.FALSE.,
+ eosType='POLY3',
+ implicitDiffusion=.TRUE.,
+ implicitViscosity=.TRUE.,
+# using KPP 
+ ivdc_kappa=0.,
+ tempAdvScheme       = 2
+ saltAdvScheme       = 2
+ tempStepping        = .TRUE.
+ saltStepping        = .TRUE.
+ multiDimAdvection   = .FALSE.
+ allowFreezing=.TRUE.,
+ useCDscheme=.TRUE.,
+ convertFW2Salt=35.,
+ useSingleCpuIO = .TRUE.,
+# balanceEmPmR = .FALSE.,
+# balanceQnet = .FALSE.,
+ balanceTrelax = .FALSE.,
+ balanceSrelax = .TRUE.,
+ &
+ 
+# Elliptic solver parameters
+ &PARM02
+ cg2dMaxIters=1000,
+ cg2dTargetResidual=1.E-13,
+ &
+
+# Time stepping parameters
+ &PARM03
+ pickupStrictlyMatch = .FALSE.,
+#startTime = 0.,
+ nIter0  = 32400000,
+# nTimeSteps = 20, 1yr =720 (43200s = 12hrs * 360 d/yr)
+ nTimeSteps = 7200000,
+ deltaTmom = 900.,
+ tauCD =     321428.,
+ deltaTtracer= 43200.,
+ deltaTClock = 43200.,
+ abEps = 0.1,
+#cAdjFreq = -1,
+# These are 1 year averages, followed by monthly
+ pChkptFreq = 3110400000.,
+ chkptFreq = 3110400000.,
+ dumpFreq = 3110400000.,
+ taveFreq = 3110400000.,
+# pChkptFreq = 2592000.,
+# chkptFreq = 2592000.,
+# dumpFreq = 2592000.,
+# taveFreq = 2592000.,
+ monitorFreq = 2592000.,
+ tauThetaClimRelax = 5184000.0,
+ tauSaltClimRelax = 7776000.0,
+ periodicExternalForcing=.TRUE.,
+ externForcingPeriod = 2592000.,
+ externForcingCycle = 31104000.,
+ &
+
+# Gridding parameters
+ &PARM04
+ usingCartesianGrid=.FALSE.,
+ usingSphericalPolarGrid=.TRUE.,
+ delZ= 50., 70., 100., 140., 190., 
+       240., 290., 340., 390., 440., 
+       490., 540., 590., 640., 690.,
+ ygOrigin=-90.,
+ delX=128*2.8125,
+ delY=64*2.8125,
+ &
+
+# Input datasets
+ &PARM05
+ bathyFile = 'depth_g77.bin',
+ hydrogThetaFile = 'lev_clim_temp.bin',
+ hydrogSaltFile = 'lev_clim_salt.bin',
+ zonalWindFile ='tren_taux.bin',
+ meridWindFile = 'tren_tauy.bin',
+ thetaClimFile = 'lev_monthly_temp.bin',
+ saltClimFile = 'lev_monthly_salt.bin',
+ surfQFile = 'shi_qnet.bin',
+ EmPmRFile = 'shi_empmr_year.bin',
+ the_run_name = 'Rational export profile (EDF match)',
+ &

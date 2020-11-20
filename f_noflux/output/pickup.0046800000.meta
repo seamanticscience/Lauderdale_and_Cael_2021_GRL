@@ -1,0 +1,14 @@
+ simulation = { 'No flux experiment' };
+ nDims = [   2 ];
+ dimList = [
+   128,    1,  128,
+    64,    1,   64
+ ];
+ dataprec = [ 'float64' ];
+ nrecords = [   123 ];
+ timeStepNumber = [   46800000 ];
+ timeInterval = [  2.021760000000E+12 ];
+ nFlds = [   11 ];
+ fldList = {
+ 'Uvel    ' 'Vvel    ' 'Theta   ' 'Salt    ' 'GuNm1   ' 'GvNm1   ' 'GtNm1   ' 'GsNm1   ' 'EtaN    ' 'dEtaHdt ' 'EtaH    '
+ };

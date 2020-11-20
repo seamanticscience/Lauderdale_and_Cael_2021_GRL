@@ -1,0 +1,14 @@
+ simulation = { 'Stretched Exponential export profile (EDF match)' };
+ nDims = [   2 ];
+ dimList = [
+   128,    1,  128,
+    64,    1,   64
+ ];
+ dataprec = [ 'float64' ];
+ nrecords = [   123 ];
+ timeStepNumber = [   39600000 ];
+ timeInterval = [  1.710720000000E+12 ];
+ nFlds = [   11 ];
+ fldList = {
+ 'Uvel    ' 'Vvel    ' 'Theta   ' 'Salt    ' 'GuNm1   ' 'GvNm1   ' 'GtNm1   ' 'GsNm1   ' 'EtaN    ' 'dEtaHdt ' 'EtaH    '
+ };
