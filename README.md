@@ -1,5 +1,5 @@
-# Lauderdale_and_Cael_Exports_Draft_Manuscript
-Model  code, output, and analysis routines (to be updated) looking at the impact of remineralization profile shape on the air-sea carbon balance, and characterizing structural uncertainty in the ocean's biological pump.
+# Lauderdale and Cael "Impact of remineralization profile shape on the air-sea carbon balance" draft manuscript repository.
+Model  code, output, and analysis routines (to be updated) looking at the impact of remineralization profile shape on the air-sea carbon balance, and characterizing structural uncertainty in the ocean's biological pump. Read the pre-print on the [Earth and Space Science Open Archive](https://www.essoar.org/doi/abs/10.1002/essoar.10504824.1).
 
 ## Fitting the remineralization profiles:
 Generate all the coefficients for the six functional forms statistically fit to the reference power-law curve in three different ways using the MATLAB routine `profile_coefficients.m`. Coefficients are stored in `export_profile_coefficients.csv`, with the coefficients used in the manuscript supplied here.
@@ -25,7 +25,7 @@ Preformed tracers, which aid in partitioning carbon and nutrients into "physical
 
 The same executable was used for each simulation. Coefficients for each remineralization function are passed using the four-value `KRemin` array in `data.dic` (filled with zeroes tot he right where needed).
 
-## Numerical model simulations
+## Numerical model simulations:
 Each simulation is associated with its own folder in this repository, which includes input files and steady-state output as an average of the last 100 years of the siumulation. The naming convention is:
 
 • `mar0.70`, `mar0.84`, or `mar0.98` for the reference simulations using the Martin Curve with _b_ values of 0.70, 0.84 (reference), and 0.98.
@@ -36,14 +36,7 @@ Each simulation is associated with its own folder in this repository, which incl
 
 • `noflux` for the simulation where no particulate organic carbon is produced at the surface, and 100% of production is channeled instead to dissolved organic carbon that degrades with a timescale of 6 months.
 
-## Analysis
-The Jupyter Notebook `export_flux_analysis.ipynb` contains the analysis routines used to generate the figures. Dependencies include `xarray`, `dask`, and `mitgcm_tools` [get from github](https://github.com/seamanticscience/mitgcm_tools)
+## Analysis:
+The Jupyter Notebook `export_flux_analysis.ipynb` contains the analysis routines used to generate the figures. Dependencies include `xarray`, `dask`, and `mitgcm_tools` ([get from github](https://github.com/seamanticscience/mitgcm_tools)).
 
 Any questions or comments, please get in contact!
-
-JML To Do:
-- [X] file description
-- [X] updated list of code for preformed tracers
-- [X] add MITgcm experiment input files
-- [X] add MITgcm ouput last model decadal average for ptracers, dic, and diagnostics
-- [X] update Jupyter notebook with relative paths to MWE model output uploaded here
