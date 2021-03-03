@@ -1,5 +1,5 @@
-# Lauderdale and Cael "Impact of remineralization profile shape on the air-sea carbon balance" draft manuscript repository.
-Model  code, output, and analysis routines (to be updated) looking at the impact of remineralization profile shape on the air-sea carbon balance, and characterizing structural uncertainty in the ocean's biological pump. Read the pre-print on the [Earth and Space Science Open Archive](https://www.essoar.org/doi/abs/10.1002/essoar.10504824.1).
+# Lauderdale and Cael "Impact of remineralization profile shape on the air-sea carbon balance" manuscript repository.
+Model  code, output, and analysis routines looking at the impact of remineralization profile shape (i.e. functional form) on the air-sea carbon balance, and characterizing structural uncertainty in the ocean's biological pump. Read the pre-print on the [Earth and Space Science Open Archive](https://www.essoar.org/doi/abs/10.1002/essoar.10504824.1).
 
 ## Fitting the remineralization profiles:
 Generate all the coefficients for the six functional forms statistically fit to the reference power-law curve in three different ways using the MATLAB routine `profile_coefficients.m`. Coefficients are stored in `export_profile_coefficients.csv`, with the coefficients used in the manuscript supplied here.
