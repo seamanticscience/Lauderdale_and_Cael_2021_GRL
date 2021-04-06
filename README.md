@@ -1,4 +1,10 @@
 # Lauderdale and Cael "Impact of remineralization profile shape on the air-sea carbon balance" manuscript repository.
+[![DOI](https://zenodo.org/badge/207910435.svg)](https://zenodo.org/badge/latestdoi/207910435)
+![GitHub release (latest by date)](https://img.shields.io/github/v/release/seamanticscience/Lauderdale_and_Cael_2021_GRL?color=1b3370)
+![GitHub last commit](https://img.shields.io/github/last-commit/seamanticscience/Lauderdale_and_Cael_2021_GRL?color=f44323)
+![GitHub License](https://img.shields.io/github/license/seamanticscience/Lauderdale_and_Cael_2021_GRL?color=ffa500)
+<a href="https://doi.org/10.1029/2020GL091746"><img src="http://img.shields.io/badge/paper%20link-doi:10.1029%2F2020GL091746-lightgrey.svg" alt="Link to paper at https://doi.org/10.1029/2020GL091746"></a>
+
 Model  code, output, and analysis routines looking at the impact of remineralization profile shape (i.e. functional form) on the air-sea carbon balance, and characterizing structural uncertainty in the ocean's biological pump. Read the pre-print on the [Earth and Space Science Open Archive](https://www.essoar.org/doi/abs/10.1002/essoar.10504824.1).
 
 ## Fitting the remineralization profiles:
@@ -9,7 +15,7 @@ Simulations were run with the "Checkpoint63m" version of MITgcm, substituting fi
 
 • `selectExportRemin=1` for the simple exponential profile,
 
-• `selectExportRemin=2` for the power-law curve ,
+• `selectExportRemin=2` for the power-law curve,
 
 • `selectExportRemin=3` for the ballast profile,
 
