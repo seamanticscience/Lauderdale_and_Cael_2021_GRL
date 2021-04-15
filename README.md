@@ -1,5 +1,5 @@
 # Lauderdale and Cael "Impact of remineralization profile shape on the air-sea carbon balance" manuscript repository.
-[![DOI](https://zenodo.org/badge/207910435.svg)](https://zenodo.org/badge/latestdoi/207910435)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4578678.svg)](https://doi.org/10.5281/zenodo.4578678)
 ![GitHub release (latest by date)](https://img.shields.io/github/v/release/seamanticscience/Lauderdale_and_Cael_2021_GRL?color=1b3370)
 ![GitHub last commit](https://img.shields.io/github/last-commit/seamanticscience/Lauderdale_and_Cael_2021_GRL?color=f44323)
 ![GitHub License](https://img.shields.io/github/license/seamanticscience/Lauderdale_and_Cael_2021_GRL?color=ffa500)
