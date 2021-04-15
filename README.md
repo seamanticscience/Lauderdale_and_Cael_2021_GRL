@@ -5,7 +5,7 @@
 ![GitHub License](https://img.shields.io/github/license/seamanticscience/Lauderdale_and_Cael_2021_GRL?color=ffa500)
 <a href="https://doi.org/10.1029/2020GL091746"><img src="http://img.shields.io/badge/paper%20link-doi:10.1029%2F2020GL091746-lightgrey.svg" alt="Link to paper at https://doi.org/10.1029/2020GL091746"></a>
 
-Model  code, output, and analysis routines looking at the impact of remineralization profile shape (i.e. functional form) on the air-sea carbon balance, and characterizing structural uncertainty in the ocean's biological pump. Read the pre-print on the [Earth and Space Science Open Archive](https://www.essoar.org/doi/abs/10.1002/essoar.10504824.1).
+Model  code, output, and analysis routines looking at the impact of remineralization profile shape (i.e. functional form) on the air-sea carbon balance, and characterizing structural uncertainty in the ocean's biological pump. Read the paper in [Geophysical Research Letters](https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2020GL091746) or find the pre-print in the [Earth and Space Science Open Archive](https://www.essoar.org/doi/abs/10.1002/essoar.10504824.3).
 
 ## Fitting the remineralization profiles:
 Generate all the coefficients for the six functional forms statistically fit to the reference power-law curve in three different ways using the MATLAB routine `profile_coefficients.m`. Coefficients are stored in `export_profile_coefficients.csv`, with the coefficients used in the manuscript supplied here.
